@@ -3,29 +3,132 @@
     <title>LSL Visual Scripting Experiments</title>
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/feed.xml" rel="self" />
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments" />
-    <updated>2020-02-10T17:04:30+01:00</updated>
+    <updated>2020-02-10T19:44:23+01:00</updated>
     <author>
-        <name>Jan</name>
+        <name>SecondLife365</name>
     </author>
     <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments</id>
 
     <entry>
-        <title>Home</title>
+        <title>Pod tours notecard</title>
         <author>
-            <name>Jan</name>
+            <name>SecondLife365</name>
         </author>
-        <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/test.html"/>
-        <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/test.html</id>
+        <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html"/>
+        <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html</id>
 
-        <updated>2020-02-10T16:37:55+01:00</updated>
+        <updated>2020-02-10T18:40:37+01:00</updated>
             <summary>
                 <![CDATA[
-                    &hellip;
+                    //cpcampos = The position one gets when on the sim, if you&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                test
+                <pre><code>//cpcampos = The position one gets when on the sim, if you type cpcampos in local chat.
+// Note: When you plan to cross the sim cpcampos changes there,
+// this way (directions we plan to go as follows) X or Y:
+
+// NORTH Y + 256
+// EAST  X + 256
+// SOUTH Y - 256
+// WEST  X - 256
+
+//A simple tour example follows, taken on 4 sims at Lautus premium sandbox.
+
+{
+    Name: Borders
+    Physical: true 
+    speed: 10
+    Touch:  On
+    
+   Text: Start, moving within  the sim. The position = cpcampos.
+   Position: 174.577, 213.864, 29.881
+   Pause: 1000
+    
+   Text: The first waypoint, the same sim. The position = cpcampos.
+    Position:  4.485, 43.344, 29.878
+    Pause:1000
+    
+    Text: Next = Crossed sim, X changed, negative. WEST we go.
+    Position: -4.44, 35.037, 29.705
+   //=  -(256 - 251.560) - 
+   //cpcampos = 251.560, 35.037, 29.705 ORIGINAL
+    Pause: 1000
+    
+    Text: Moving within the sim. The position = cpcampos.
+    Position: 220.321, 3.278, 29.705
+    Pause: 1000
+    
+    Text: Next = Crossed sim, Y changed, negative. SOUTH we go.
+    Position: 214.730, -2.349, 29.610
+    //= -(256 - 253.651) - 
+    //cpcampos = 214.730, 253.651, 29.610
+    Pause: 1000
+    
+    Text: Next = Crossed sim, Y changed, positive, NORTH we go, 
+    Position:  252.920, 291.692, 29.900
+    //= 256 + 35.692
+    //cpcampos = 252.920, 35.692, 29.900
+    Pause: 1000
+    
+    Text: Next = Crossed sim. X changed, positive, EAST we go.
+    Position: 261.512, 43.731, 29.646
+    //= 256 + 5.512
+    //cpcampos = 5.512, 43.731, 29.646
+    Pause: 1000
+   
+    Text: Next = End/ Start. Moving within the sim. Position = cpcampos.
+    Position: 174.577, 213.864, 29.881
+    Pause: 1000
+}</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Resources</title>
+        <author>
+            <name>SecondLife365</name>
+        </author>
+        <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/resources.html"/>
+        <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/resources.html</id>
+
+        <updated>2020-02-10T18:22:20+01:00</updated>
+            <summary>
+                <![CDATA[
+                    MiceOnABeam, free limited version, download HERE
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <ol>
+<li><a href="http://www.miceonabeam.com/">MiceOnABeam</a>, free limited version, download <a href="http://www.miceonabeam.com/storage/downloads/releases/release-v105/MiceOnABeam%20Installer%20v1.0.5.zip">HERE</a></li>
+</ol>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>About</title>
+        <author>
+            <name>SecondLife365</name>
+        </author>
+        <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/frontpage.html"/>
+        <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/frontpage.html</id>
+
+        <updated>2020-02-10T19:42:33+01:00</updated>
+            <summary>
+                <![CDATA[
+                     I am exploring the options users of Second Life and other&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p><img class="post__image post__image--center" src="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/media/posts/2/virtual.svg" width="500" height="250"></p>
+<p>I am exploring the options users of Second Life and other similar virutal words have to create scripts visually. For that purpose I am testing and using especially <a href="https://miceonabeam.fogbugz.com/default.asp?W1" target="_blank" rel="noopener noreferrer">MiceOnABeam</a> application made by Antonius Frentis. I am just a user of this application. The code of this web is available on Github.</p>
+<p>This site may also contain various configuration notecard, finished scripts or parts of the code I am working on. Where necessary I will create a separate repository. When finished or abandoned the repositories may be deleted any time.</p>
+<p>Various files may need an additional input by me or by any voluntary contributor. Github provides a system for advanced users allowing that. If you find you have a solution for a particular problem i am currently solving, feel free to contribute by making a commit any time in the future. If I find it useful, I will approve it or I will contact you.</p>
+<p>This website and all files present  under my account are parts of a hobby project, created by myself, ound elsewhere on the internet or contributed by people helping me. Therefore I cannot state that you can use everything you find here for your own projects as it is.</p>
+<p>I am not a professional scripter. Therefore bugs in a code, unclean code or any other unknown problems may occure when trying anything you find in my repositories. I am just documenting my own journey. It means that anything you use my content for you do on your own risk. It will make me happy if you find anything ispiring you, helpful ideas or even an opportunity to contribute your own knowledge.</p>
             ]]>
         </content>
     </entry>
