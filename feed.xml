@@ -3,7 +3,7 @@
     <title>LSL Visual Scripting Experiments</title>
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/feed.xml" rel="self" />
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments" />
-    <updated>2020-02-10T19:44:23+01:00</updated>
+    <updated>2020-02-10T19:49:22+01:00</updated>
     <author>
         <name>SecondLife365</name>
     </author>
@@ -17,15 +17,15 @@
         <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html"/>
         <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html</id>
 
-        <updated>2020-02-10T18:40:37+01:00</updated>
+        <updated>2020-02-10T19:49:07+01:00</updated>
             <summary>
                 <![CDATA[
-                    //cpcampos = The position one gets when on the sim, if you&hellip;
+                    //Working version //cpcampos = The position one gets when on the sim,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <pre><code>//cpcampos = The position one gets when on the sim, if you type cpcampos in local chat.
+                <pre><code>//Working version<br>//cpcampos = The position one gets when on the sim, if you type cpcampos in local chat.
 // Note: When you plan to cross the sim cpcampos changes there,
 // this way (directions we plan to go as follows) X or Y:
 
