@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "LSL Visual Scripting Experiments",
+    "description": "",
+    "home_page_url": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments",
+    "feed_url": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Jan"
+    },
+    "items": [
+        {
+            "id": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/test.html",
+            "url": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/test.html",
+            "title": "Test",
+            "summary": "test",
+            "content_html": "test",
+            "author": {
+                "name": "Jan"
+            },
+            "tags": [
+            ],
+            "date_published": "2020-02-10T10:46:28+01:00",
+            "date_modified": "2020-02-10T10:46:28+01:00"
+        }
+    ]
+}
