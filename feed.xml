@@ -3,7 +3,7 @@
     <title>LSL Visual Scripting Experiments</title>
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/feed.xml" rel="self" />
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments" />
-    <updated>2020-02-10T20:06:26+01:00</updated>
+    <updated>2020-02-10T23:38:17+01:00</updated>
     <author>
         <name>SecondLife365</name>
     </author>
@@ -16,8 +16,11 @@
         </author>
         <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html"/>
         <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html</id>
+            <category term="tour"/>
+            <category term="pods"/>
+            <category term="notecard"/>
 
-        <updated>2020-02-10T19:49:07+01:00</updated>
+        <updated>2020-02-10T20:10:32+01:00</updated>
             <summary>
                 <![CDATA[
                     //Working version //cpcampos = The position one gets when on the sim,&hellip;
@@ -92,8 +95,9 @@
         </author>
         <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/resources.html"/>
         <id>https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/resources.html</id>
+            <category term="MiceOnABeam"/>
 
-        <updated>2020-02-10T18:22:20+01:00</updated>
+        <updated>2020-02-10T20:09:41+01:00</updated>
             <summary>
                 <![CDATA[
                     MiceOnABeam, free limited version, download HERE

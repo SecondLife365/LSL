@@ -20,9 +20,12 @@
                 "name": "SecondLife365"
             },
             "tags": [
+                   "tour",
+                   "pods",
+                   "notecard"
             ],
             "date_published": "2020-02-10T18:35:52+01:00",
-            "date_modified": "2020-02-10T19:49:07+01:00"
+            "date_modified": "2020-02-10T20:10:32+01:00"
         },
         {
             "id": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/resources.html",
@@ -34,9 +37,10 @@
                 "name": "SecondLife365"
             },
             "tags": [
+                   "MiceOnABeam"
             ],
             "date_published": "2020-02-10T18:22:20+01:00",
-            "date_modified": "2020-02-10T18:22:20+01:00"
+            "date_modified": "2020-02-10T20:09:41+01:00"
         },
         {
             "id": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/frontpage.html",
