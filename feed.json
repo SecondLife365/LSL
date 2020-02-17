@@ -11,6 +11,22 @@
     },
     "items": [
         {
+            "id": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/objects-home-script.html",
+            "url": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/objects-home-script.html",
+            "title": "Objects home script",
+            "summary": "integer lkey;init(){ llOwnerSay ( \"Touch the object and set to store its&hellip;",
+            "content_html": "<pre>integer lkey;\n\ninit()\n{\n    llOwnerSay ( \"Touch the object and set to store its current position\" );\n    llOwnerSay ( \"choose 'move 2' to return to its stored position\" );\n    llOwnerSay ( \"rm script to remove the script from the object\" );\n    llOwnerSay ( \"Position is stored in object desc if you want to change it manually\" );\n}   \n\ndefault\n{\n    state_entry()\n    {\n        init();\n    }\n    on_rez( integer param )\n    {\n        init();\n    }\n\n    touch_start(integer total_number)\n    {\n        if ( llDetectedKey(0) == llGetOwner() )\n        {\n            lkey = llListen( 8192, \"\",llGetOwner(),\"\" );\n            llSetTimerEvent( 60 );\n            llDialog( llGetOwner(), \"Object Options:\",\n                     [ \"set pos\", \"move 2 pos\", \"rm script\" ],8192);\n        }\n    }\n    listen ( integer ch, string nm, key id, string message )\n    {\n        llListenRemove( lkey );\n        if ( message == \"set pos\" )\n        {\n            llSetObjectDesc( (string)llGetRootPosition() );\n            llOwnerSay ( \"Position stored as \" + llGetObjectDesc() );\n        }\n        if ( message == \"move 2 pos\" )\n        {\n            vector pos = (vector)llGetObjectDesc();\n            do {\n                llSetPos( pos ) ;\n            } while ( llVecDist( llGetRootPosition(), pos ) &gt; 0.01 );\n            llOwnerSay ( \"Object moved to \" + (string)pos );\n        }\n        if ( message == \"rm script\" )\n        {\n            llRemoveInventory( llGetScriptName() );\n        }\n    }\n    timer()</pre>",
+            "author": {
+                "name": "SecondLife365"
+            },
+            "tags": [
+                   "MiceOnABeam",
+                   "MOABfile"
+            ],
+            "date_published": "2020-02-11T18:05:22+01:00",
+            "date_modified": "2020-02-17T12:06:04+01:00"
+        },
+        {
             "id": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html",
             "url": "https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/pod-tours-notecard.html",
             "title": "Pod tours notecard",
