@@ -3,7 +3,7 @@
     <title>LSL Visual Scripting Experiments</title>
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments/feed.xml" rel="self" />
     <link href="https://SecondLife365.github.io/LSL-Visual-Scripting-Experiments" />
-    <updated>2020-02-17T12:07:16+01:00</updated>
+    <updated>2020-02-17T12:28:34+01:00</updated>
     <author>
         <name>SecondLife365</name>
     </author>
@@ -19,15 +19,29 @@
             <category term="MiceOnABeam"/>
             <category term="MOABfile"/>
 
-        <updated>2020-02-17T12:06:04+01:00</updated>
+        <updated>2020-02-17T12:28:26+01:00</updated>
             <summary>
                 <![CDATA[
-                    integer lkey;init(){ llOwnerSay ( "Touch the object and set to store its&hellip;
+                    //Trying to add rotation // :CATEGORY:Building// :NAME:Set_and_Move// :AUTHOR:Anonymous// :CREATED:2010-01-10 05:20:56.000// :EDITED:2013-09-18 15:39:02//&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <pre>integer lkey;
+                <pre>//Trying to add rotation<br><br></pre>
+<pre>// :CATEGORY:Building
+// :NAME:Set_and_Move
+// :AUTHOR:Anonymous
+// :CREATED:2010-01-10 05:20:56.000
+// :EDITED:2013-09-18 15:39:02
+// :ID:741
+// :NUM:1024
+// :REV:1.0
+// :WORLD:Second Life
+// :DESCRIPTION:
+// Set and Move.lsl
+// :CODE:
+
+integer lkey;
 
 init()
 {
@@ -79,7 +93,14 @@ default
             llRemoveInventory( llGetScriptName() );
         }
     }
-    timer()</pre>
+    timer()
+    {
+        llListenRemove( lkey );
+        llSetTimerEvent( 0 );
+    }
+}
+// END //
+</pre>
             ]]>
         </content>
     </entry>
